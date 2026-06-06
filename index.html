@@ -322,6 +322,10 @@
       </div>
     </div>
     <div class="nav-item">
+      <div class="nav-link" onclick="showPage('about')">About Me</div></div>
+    <div class="nav-item">
+      <div class="nav-link" onclick="showPage('certs')">Certifications</div></div>
+    <div class="nav-item">
       <div class="nav-link" onclick="showPage('devops')">DevOps</div>
     </div>
     <div class="nav-item">
@@ -2282,9 +2286,21 @@ git stash                      <span class="cm"># save WIP before switching bran
   <div class="section-banner"><div class="section-banner-content"><h1>Contact</h1><p>Reach out to our team or explore the project</p><div class="line"></div></div></div>
   <div class="content">
     <div class="g3 rv in" style="gap:1.25rem;margin-bottom:2rem">
-      <div class="team-card me-card"><div class="tav" style="background:linear-gradient(135deg,#3b82f6,#a78bfa)">MS</div><div class="team-name">Manish Singri</div><div class="team-id">01FE24BCS107</div><div class="team-role">Full Stack Developer</div><div style="margin-top:6px"><span class="badge bb" style="font-size:0.65rem">⭐ You</span></div></div>
+            <div class="team-card">
+        <div class="tav" style="background:linear-gradient(135deg,#3b82f6,#a78bfa)">MS</div>
+        <div class="team-name">Manish Singri</div>
+        <div class="team-id">01FE24BCS107</div>
+        <div class="team-role">Full Stack Developer</div>
+      </div>
       <div class="team-card"><div class="tav" style="background:linear-gradient(135deg,#22c55e,#3b82f6)">DP</div><div class="team-name">Devansh Pandey</div><div class="team-id">01FE24BCS046</div><div class="team-role">Backend Developer</div></div>
-      <div class="team-card"><div class="tav" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">OA</div><div class="team-name">Omkar Ananthapur</div><div class="team-id">01FE24BCS022</div><div class="team-role">Frontend Developer</div></div>
+            <div class="team-card me-card" onclick="showPage('about')" style="cursor:pointer" title="View my profile">
+        <div class="tav" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">OA</div>
+        <div class="team-name">Omkar Anantapur</div>
+        <div class="team-id">01FE24BCS022</div>
+        <div class="team-role">Frontend Developer</div>
+        <div style="margin-top:6px"><span class="badge bb" style="font-size:0.65rem">⭐ You</span></div>
+        <div style="margin-top:4px;font-size:0.7rem;color:var(--muted)">Click to view profile</div>
+      </div>
       <div class="team-card"><div class="tav" style="background:linear-gradient(135deg,#8b5cf6,#ec4899)">SR</div><div class="team-name">Subhash Reddy</div><div class="team-id">01FE24BCS094</div><div class="team-role">Database & API</div></div>
       <div class="team-card"><div class="tav" style="background:linear-gradient(135deg,#0ea5e9,#22c55e)">AS</div><div class="team-name">Atharva Shetty</div><div class="team-id">01FE23BCS039</div><div class="team-role">UI/UX & Testing</div></div>
       <div class="team-card"><div class="tav" style="background:linear-gradient(135deg,#f97316,#eab308)">SP</div><div class="team-name">Samarth Patil</div><div class="team-id">01FE23BCS012</div><div class="team-role">System Design & Docs</div></div>
@@ -2376,5 +2392,161 @@ git stash                      <span class="cm"># save WIP before switching bran
   }, {threshold:0.08});
   document.querySelectorAll('.rv').forEach(el => obs.observe(el));
 </script>
+
+<!-- ABOUT ME PAGE -->
+<div class="page" id="pg-about">
+  <div class="section-banner">
+    <div class="section-banner-content">
+      <h1>About Me</h1>
+      <p>Frontend Developer &middot; Computer Science &amp; Engineering &middot; KLE Tech</p>
+      <div class="line"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="card rv in" style="background:linear-gradient(135deg,rgba(59,130,246,0.08),rgba(167,139,250,0.05));border-color:var(--blue)">
+      <div style="display:flex;gap:2rem;align-items:center;flex-wrap:wrap">
+        <div style="flex-shrink:0">
+          <img src="images/omkar_profile.jpg" alt="Omkar Anantapur"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+               style="width:150px;height:150px;border-radius:50%;object-fit:cover;border:3px solid var(--blue);box-shadow:0 0 24px rgba(59,130,246,0.35)"/>
+          <div style="display:none;width:150px;height:150px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#ef4444);align-items:center;justify-content:center;font-size:3rem;font-weight:900;color:#fff">OA</div>
+        </div>
+        <div style="flex:1;min-width:200px">
+          <h2 style="font-size:2rem;font-weight:900;color:var(--text);margin-bottom:4px">Omkar Anantapur</h2>
+          <div style="color:var(--blue);font-size:1rem;font-weight:600;margin-bottom:0.75rem">Frontend Developer</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:0.75rem">
+            <span class="badge bb">01FE24BCS022</span>
+            <span class="badge bg">B.Tech CSE</span>
+            <span class="badge bp">2024&#8211;2028</span>
+          </div>
+          <div style="font-size:0.875rem;color:var(--muted)">&#127891; KLE Technological University, Hubballi</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="g2 rv">
+      <div class="card">
+        <div class="card-title">&#128203; Personal Details</div>
+        <div class="card-body">
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;justify-content:space-between;padding-bottom:8px;border-bottom:1px solid var(--border)">
+              <span style="color:var(--muted);font-size:0.82rem">Full Name</span>
+              <span style="color:var(--text);font-weight:600;font-size:0.85rem">Omkar Anantapur</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding-bottom:8px;border-bottom:1px solid var(--border)">
+              <span style="color:var(--muted);font-size:0.82rem">USN</span>
+              <span style="color:var(--blue);font-weight:600;font-size:0.82rem;font-family:'JetBrains Mono',monospace">01FE24BCS022</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding-bottom:8px;border-bottom:1px solid var(--border)">
+              <span style="color:var(--muted);font-size:0.82rem">Department</span>
+              <span style="color:var(--text);font-weight:600;font-size:0.85rem">Computer Science &amp; Engineering</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding-bottom:8px;border-bottom:1px solid var(--border)">
+              <span style="color:var(--muted);font-size:0.82rem">University</span>
+              <span style="color:var(--text);font-weight:600;font-size:0.85rem">KLE Technological University</span>
+            </div>
+            <div style="display:flex;justify-content:space-between">
+              <span style="color:var(--muted);font-size:0.82rem">Batch</span>
+              <span style="color:var(--text);font-weight:600;font-size:0.85rem">2024 &#8211; 2028</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">&#128187; Technical Skills</div>
+        <div class="card-body">
+          <div class="tech-wrap">
+            <span class="tp">&#127760; HTML</span>
+            <span class="tp">&#127912; CSS</span>
+            <span class="tp">&#9889; JavaScript</span>
+            <span class="tp">&#9883; React</span>
+            <span class="tp">&#129002; Node.js</span>
+            <span class="tp">&#127807; MongoDB</span>
+            <span class="tp">&#128025; Git &amp; GitHub</span>
+            <span class="tp">&#127912; Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card rv">
+      <div class="card-title">&#128295; Role in TaskBridge Project</div>
+      <div class="card-body">
+        As the <strong style="color:var(--text)">Frontend Developer</strong> of the team, I was responsible for designing and building the complete user interface of <strong style="color:var(--text)">TaskBridge</strong> &#8212; a role-based workforce management system. My responsibilities included:
+        <ul style="margin-top:0.75rem;padding-left:1.25rem;display:flex;flex-direction:column;gap:6px">
+          <li>Implementing responsive layouts using React and CSS</li>
+          <li>Building reusable component-based architecture</li>
+          <li>Integrating JWT-based authentication flows</li>
+          <li>Connecting frontend with REST APIs (Node.js + MongoDB backend)</li>
+          <li>Ensuring cross-browser compatibility and mobile responsiveness</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card rv" style="cursor:pointer" onclick="showPage('certs')">
+      <div class="card-title">&#127941; Certifications <span style="font-size:0.75rem;color:var(--muted);margin-left:8px">Click to view &#8594;</span></div>
+      <div class="card-body">
+        <div style="display:flex;align-items:center;gap:1rem;padding:0.75rem;background:var(--surface2);border-radius:10px;border:1px solid var(--border)">
+          <div style="width:42px;height:42px;background:linear-gradient(135deg,#0f62fe,#0043ce);border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:0.75rem;flex-shrink:0">IBM</div>
+          <div style="flex:1">
+            <div style="font-weight:600;font-size:0.9rem;color:var(--text)">DevOps Basics for Everyone</div>
+            <div style="font-size:0.78rem;color:var(--muted)">CD0115EN &middot; IBM via edX &middot; April 2026</div>
+          </div>
+          <span class="badge bg">Verified &#10003;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CERTIFICATIONS PAGE -->
+<div class="page" id="pg-certs">
+  <div class="section-banner">
+    <div class="section-banner-content">
+      <h1>Certifications</h1>
+      <p>Verified credentials from industry-leading platforms</p>
+      <div class="line"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="card rv in">
+      <div class="card-title">&#127941; My Verified Certificates</div>
+      <div class="card-body">Completed and verified courses from global platforms &#8212; demonstrating commitment to continuous learning beyond the classroom.</div>
+    </div>
+
+    <div class="card rv">
+      <div style="display:flex;align-items:flex-start;gap:1.5rem;margin-bottom:1.25rem;flex-wrap:wrap">
+        <div style="width:56px;height:56px;background:linear-gradient(135deg,#0f62fe,#0043ce);border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:0.9rem;flex-shrink:0;box-shadow:0 4px 14px rgba(15,98,254,0.35)">IBM</div>
+        <div style="flex:1">
+          <div style="font-size:1.15rem;font-weight:800;color:var(--text);margin-bottom:4px">DevOps Basics for Everyone</div>
+          <div style="font-size:0.85rem;color:var(--muted);margin-bottom:10px">Course Code: <span style="font-family:'JetBrains Mono',monospace;color:var(--blue)">CD0115EN</span> &middot; IBM via edX &middot; UniversityX</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span class="badge bg">&#10003; Verified</span>
+            <span class="badge bb">April 2026</span>
+            <span class="badge bp">IBM</span>
+            <span class="badge by">edX</span>
+          </div>
+        </div>
+      </div>
+      <div class="diag-wrap">
+        <div class="diag-head">&#128196; Certificate Preview &#8212; Omkar Anantapur</div>
+        <div class="diag-body" style="background:#f0f0f0;display:flex;justify-content:center;padding:1.5rem">
+          <img src="images/ibm_certificate.jpg" alt="IBM DevOps Certificate"
+               style="border-radius:8px;width:100%;max-width:680px;box-shadow:0 4px 20px rgba(0,0,0,0.15)"/>
+        </div>
+      </div>
+      <div style="margin-top:1rem;display:flex;align-items:center;gap:1rem;padding:0.85rem 1rem;background:var(--surface2);border-radius:10px;border:1px solid var(--border);flex-wrap:wrap">
+        <div>
+          <div style="font-size:0.72rem;color:var(--muted);margin-bottom:2px;text-transform:uppercase;letter-spacing:0.06em">Valid Certificate ID</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:1rem;color:var(--blue);font-weight:700;letter-spacing:0.05em">A8F0-B3C5-1D9E-67A2-B4D8</div>
+        </div>
+        <div style="margin-left:auto">
+          <div style="font-size:0.72rem;color:var(--muted);margin-bottom:2px;text-transform:uppercase;letter-spacing:0.06em">Issued By</div>
+          <div style="font-size:0.88rem;color:var(--text);font-weight:600">IBM &middot; edX</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
